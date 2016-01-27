@@ -1,2 +1,13 @@
 def gameover():
-  
+    import time
+    print("I knew you wouldn't last more than 5 minutes!")
+    time.sleep(1)
+    gameover = raw_input("Thank you for playing our game we hope you enjoyed! If you would like to return to the title screen type Try Again. If you would rather give up, type Exit")
+    if gameover == "Try Again":
+        startgame()
+    elif gameover == "Try again":
+        startgame()
+    elif gameover == "try again":
+        startgame()
+    else:
+        print("You puny weakling")
